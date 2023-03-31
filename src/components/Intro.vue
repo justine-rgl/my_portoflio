@@ -39,7 +39,7 @@ section{
     align-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
 }
 
