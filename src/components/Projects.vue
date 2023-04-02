@@ -248,7 +248,7 @@ a, button {
     width: 100%;
 }
 
-a::after {
+a::after, button::after {
   background-color: #fff;
   border-radius: 40px;
   content: '';
@@ -265,39 +265,11 @@ a::after {
   z-index: -1;
 }
 
-a:hover::after {
+a:hover::after, button:hover::after {
   transform: translate(0, 0);
 }
 
-a:hover {
-  border: 1px solid #1e1e1e;
-  color: #1e1e1e;
-  /* transform: scale(1.05); */
-  will-change: transform;
-}
-
-button::after {
-  background-color: #fff;
-  border-radius: 40px;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-}
-
-button:hover::after {
-  transform: translate(0, 0);
-}
-
-button:hover {
+a:hover, button:hover {
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
   /* transform: scale(1.05); */

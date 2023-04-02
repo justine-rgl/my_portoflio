@@ -155,8 +155,8 @@ a {
 .icons:hover {
     -webkit-filter: invert(1);
     filter: invert(1);
-    transition: filter 1s;
-    transition: -webkit-filter 1s;
+    /* transition: filter 1s;
+    transition: -webkit-filter 1s; */
 }
 
 .picture {
