@@ -27,7 +27,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <!-- <div class="projets">
             <div class="projet">
                 <img src="@/assets/project_kalaxy.jpg" class="image-projet">
@@ -45,7 +44,6 @@
                 </div>
             </div>
         </div> -->
-        <div class="projets">
             <div class="projet">
                 <img src="@/assets/project_extension.png" alt="Extension navigateur" class="image-projet">
                 <div class="description-projet">
@@ -61,8 +59,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="projets">
             <div class="projet">
                 <img src="@/assets/project_dataviz.png" alt="Datavisualisation & API" class="image-projet">
                 <div class="description-projet">
@@ -79,8 +75,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="projets">
             <div class="projet">
                 <img src="@/assets/project_pico.png" alt="Jeu Pico-8" class="image-projet">
                 <div class="description-projet">
@@ -129,6 +123,9 @@ export default defineComponent({
 
 
 <style scoped>
+#projects {
+  padding-top: 60px;
+}
 
 section{
   justify-content: center;
@@ -138,29 +135,27 @@ section{
 }
 
 .container {
-    padding-bottom:50px;
     justify-items: center;
     margin: auto;
     width: 80%;
 }
 
-.projets {
+.projet {
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
-	width:100%;
-	height:24em;
-	border-radius:12px;
+    padding: 2em;
+    border-radius:12px;
     border-style: solid;
     border-width: 1px;
     border-color: #1E1E1E;
 	margin: 0em 0em 3em 0em;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    gap: 2em;
 }
 
-.projet {
-    display: flex;
-    padding: 2em 10em 2em 2em;
+@media screen and (max-width: 800px) {
+    .projet {
+        flex-direction: column;
+    }
 }
 
 .image-projet {
@@ -172,39 +167,19 @@ section{
     border-style: solid;
     border-width: 1px;
     border-color: #1E1E1E;
-    margin-right: 2em;
 }
 
 .description-projet {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 30rem;
 }
-
-/* @media screen and (max-width: 600px) {
-    .description-projet {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    } 
-
-    .projets {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-	width:60%;
-	height:48em;
-	border-radius:12px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1E1E1E;
-	margin: 0em 0em 3em 0em;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
-    }
-} */
 
 h1 {
     font-size: 30px;
+    font-weight: normal;
+    margin-top: 0;
 }
 
 h2 {
@@ -231,11 +206,11 @@ p {
 .boutons-projet {
     display: flex;
     gap: 20px;
-    height: 40px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
-a {
+a, button {
     display: flex;
     background-color: #1E1E1E;
     border-radius: 40px;
@@ -243,24 +218,17 @@ a {
     font-size: 15px;
     color: #fff;
     padding: 10px;
-    border-style: none;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-width: 1px;
     text-decoration: none;
     width: auto;
     cursor: pointer;
-}
-
-button {
-    display: flex;
-    background-color: #1E1E1E;
-    border-radius: 40px;
-    font-family:Sora, sans-serif;
-    font-size: 15px;
-    color: #fff;
-    padding: 10px;
-    border-style: none;
-    text-decoration: none;
-    width: auto;
-    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
 }
 
 .modal {
@@ -278,6 +246,62 @@ button {
 
 .image-modal {
     width: 100%;
+}
+
+a::after {
+  background-color: #fff;
+  border-radius: 40px;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+a:hover::after {
+  transform: translate(0, 0);
+}
+
+a:hover {
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+button::after {
+  background-color: #fff;
+  border-radius: 40px;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+button:hover::after {
+  transform: translate(0, 0);
+}
+
+button:hover {
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  transform: scale(1.05);
+  will-change: transform;
 }
 
 </style>

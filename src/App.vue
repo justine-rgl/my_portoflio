@@ -3,6 +3,11 @@
 </template>
 
 <style lang="scss">
+
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Sora, sans-serif;
   background-color: #ffff;

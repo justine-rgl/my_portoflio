@@ -26,8 +26,8 @@ ul {
     /* position: sticky;
     top: 0;
     z-index: 1; */
-    padding: 15px 0px 15px 0px;
-    max-width: 1174px;
+    padding: 15px 50px;
+    max-width: 1264px;
     justify-items: center;
     margin: auto;
 }

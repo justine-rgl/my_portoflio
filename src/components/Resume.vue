@@ -15,8 +15,8 @@
           human-centric... Plusieurs raisons m’ont amenée à envisager une reconversion en
           tant que développeuse. J’ai donc décidé en 2022 de quitter la communication et
           de me lancer dans l’aventure
-          <a href="https://adatechschool.fr/" target="_blank">Ada Tech School</a>.<br /><br />projets,
-         projets, aide à la aide à la Cette formation offre un cadre idéal à l’apprentissage du métier de
+          <a href="https://adatechschool.fr/" target="_blank">Ada Tech School</a>.<br /><br />
+          Cette formation offre un cadre idéal à l’apprentissage du métier de
           développeuse grâce à une pédagogie alternative utilisant les méthodes agiles,
           des encadrants professionnels et de nombreux projets de groupes.<br /><br />
           <u>Notions étudiées :</u><br />
@@ -50,7 +50,7 @@
       <!-- <img src="@/assets/php.png" class="icons-technos">
             <img src="@/assets/mysql.png" class="icons-technos"> -->
       <img src="@/assets/react.png" alt="React" title="React" class="icons-technos" />
-      <img src="@/assets/vue.png" alt="Vue.js" title="Vue.js" class="icons-technos" />
+      <img src="@/assets/vue.png" alt="Vue.js" title="Vue" class="icons-technos" />
       <img src="@/assets/github_black.png" alt="GitHub" title="GitHub" class="icons-technos" />
       <img src="@/assets/vscode.png" alt="Visual Studio Code" title="Visual Studio Code" class="icons-technos" />
       <img src="@/assets/figma.png" alt="Figma" title="Figma" class="icons-technos" />
@@ -66,21 +66,23 @@
 </script>
 
 <style scoped>
+#resume {
+  padding-top: 60px;
+}
+
 section {
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
 }
 
 .container {
-  padding-bottom: 0;
+  padding:10px 0px 20px 0px;
   align-content: space-between;
   flex-wrap: wrap;
   margin: auto;
   width: 60%;
 }
 .title {
-  margin-top: 60px;
   margin-bottom: 30px;
 }
 .text {
@@ -134,7 +136,7 @@ p {
   display: flex;
   background-color: #fff;
   width: 100%;
-  height: 6em;
+  padding: 20px 0px;
   border-radius: 12px;
   border-style: solid;
   border-width: 1px;
@@ -142,11 +144,28 @@ p {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 100px;
 }
 
 .icons-technos {
   max-height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .icons-technos {
+    max-height: 25px;
+  }
+
+  .text {
+    flex-direction: column;
+  }
+
+  .reconversion {
+    width: 100%;
+  }
+
+  .cv {
+    width: 100%;
+  }
 }
 
 </style>

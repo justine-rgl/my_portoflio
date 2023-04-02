@@ -14,6 +14,7 @@
     position: fixed;
     bottom: 50px;
     right: 50px;
+    z-index: 1;
 }
 
 a {
@@ -22,8 +23,8 @@ a {
     border-radius: 40px;
     padding: 10px;
     border-style: none;
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
     justify-content: center;
     align-items: center;

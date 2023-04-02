@@ -12,9 +12,9 @@
             </div>
             <div class="buttons">
                 <a href="mailto:justine.rougeulle@gmail.com" class="contact">Contactez-moi</a>
-                <a href="https://github.com/justine-rgl" target="_blank" class="github"><img src="@/assets/github_black.png" alt="GitHub" class="icon"></a>
-                <a href="https://www.linkedin.com/in/justinerougeulle/" target="_blank" class="linkedin"><img src="@/assets/linkedin_black.png" alt="Linkedin" class="icon"></a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab" target="_blank" class="heart"><img src="@/assets/heart_black.png" alt="Coeur" class="icon"></a>
+                <a href="https://github.com/justine-rgl" target="_blank" class="icons"><img src="@/assets/github_black.png" alt="GitHub" class="icon"></a>
+                <a href="https://www.linkedin.com/in/justinerougeulle/" target="_blank" class="icons"><img src="@/assets/linkedin_black.png" alt="Linkedin" class="icon"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab" target="_blank" class="icons"><img src="@/assets/heart_black.png" alt="Coeur" class="icon"></a>
             </div>
         </div>
         <div class="picture">
@@ -34,12 +34,10 @@ section{
 }
 
 .container {
-    padding-bottom:50px;
-    padding-top:10px;
+    padding:10px 0px 20px 0px;
     align-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
-    /* width: 90%; */
     margin: auto;
 }
 
@@ -49,6 +47,7 @@ section{
 	flex-direction: column;
 	width:35em;
 	height:40em;
+    padding: 50px;
 	border-radius:12px;
     border-style: solid;
     border-width: 1px;
@@ -59,7 +58,7 @@ section{
 
 .text {
     max-width: 420px;
-    margin: 50px;
+    margin-bottom: 60px;
 }
 
 h2 {
@@ -81,12 +80,10 @@ p {
 
 .buttons {
     display: flex;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-right: 200px;
     justify-content: space-between;
     height: 40px;
     cursor: pointer;
+    max-width: 300px;
 }
 
 .contact {
@@ -95,10 +92,17 @@ p {
     font-family:Sora, sans-serif;
     color: #fff;
     padding: 10px;
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1E1E1E;
     width: auto;
     cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
 }
+
 
 a {
     display:flex;
@@ -115,9 +119,44 @@ a {
     text-decoration: none;
 }
 
+.contact::after {
+  background-color: #fff;
+  border-radius: 40px;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.contact:hover::after {
+  transform: translate(0, 0);
+}
+
+.contact:hover {
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
 .icon {
     height: 22px;
     width: 22px;
+}
+
+.icons:hover {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    transition: filter 1s;
+    transition: -webkit-filter 1s;
 }
 
 .picture {
@@ -132,8 +171,26 @@ a {
 }
 
 .photo {
+    display: block;
     height: 100%;
     width: 100%;
     border-radius: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+        max-width: 80%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .picture {
+        height: auto;
+        max-width: 80%;
+    }
 }
 </style>
