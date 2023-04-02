@@ -39,9 +39,13 @@ section{
     flex-wrap: wrap;
     gap: 50px;
     margin: auto;
+    /* width: 1264px;
+    padding: 0 45px;
+    align-content: stretch; */
 }
 
 .intro {
+    /* flex: 1; */
     display: flex;
     background-color: #fff;
 	flex-direction: column;
@@ -160,6 +164,7 @@ a {
 }
 
 .picture {
+    /* flex: 1; */
 	flex-direction: column;
 	width:35em;
 	height:40em;
