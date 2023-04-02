@@ -272,7 +272,7 @@ a:hover::after {
 a:hover {
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   will-change: transform;
 }
 
@@ -300,7 +300,7 @@ button:hover::after {
 button:hover {
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   will-change: transform;
 }
 

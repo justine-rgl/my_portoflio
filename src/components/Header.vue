@@ -3,7 +3,7 @@
         <a href=""><img src="@/assets/logo-jr.png" alt="Logo" class="logo" /></a>
         <ul class="header-menu">
             <a href="" class="header-links">Home</a>
-            <a href="#resume" class="header-links">About</a>
+            <a href="#about" class="header-links">About</a>
             <a href="#projects" class="header-links">Projects</a>
         </ul>
     </nav>

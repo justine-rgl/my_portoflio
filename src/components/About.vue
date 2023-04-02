@@ -1,4 +1,4 @@
-<template id="resume">
+<template id="about">
   <section class="container">
     <div class="title">
       <h2>Histoire d'une reconversion 👩‍💻</h2>
@@ -24,7 +24,7 @@
           programmation, algorithmie, architecture logiciel et bases de données.
         </p>
       </div>
-      <div class="cv">
+      <div class="resume">
         <h4>Expérience</h4>
         <p style="color:#11b2cc"><strong>Customer Marketing Manager</strong> (2020-2022)</p>
         <p><a href="https://www.wearephenix.com/" target="_blank"><strong>Phenix</strong></a> | Stratégie de contenus B2B, outils de vente pour les équipes,
@@ -66,7 +66,7 @@
 </script>
 
 <style scoped>
-#resume {
+#about {
   padding-top: 60px;
 }
 
@@ -128,7 +128,7 @@ p {
     width: 52%;
 }
 
-.cv {
+.resume {
     width: 48%;
 }
 
@@ -163,7 +163,7 @@ p {
     width: 100%;
   }
 
-  .cv {
+  .resume {
     width: 100%;
   }
 }

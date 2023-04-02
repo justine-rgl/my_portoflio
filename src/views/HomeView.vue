@@ -2,7 +2,7 @@
   <div class="home">
     <Header id="header"/>
     <Intro id="introduction"/>
-    <Resume id="resume"/>
+    <About id="about"/>
     <Projects id="projects"/>
     <ButtonTop/>
     <Footer/>
@@ -12,7 +12,7 @@
 <script>
 import Header from '@/components/Header.vue'
 import Intro from '@/components/Intro.vue'
-import Resume from '@/components/Resume.vue'
+import About from '@/components/About.vue'
 import Projects from '@/components/Projects.vue'
 import ButtonTop from '@/components/ButtonTop.vue'
 import Footer from '@/components/Footer.vue'
@@ -23,7 +23,7 @@ export default {
   components: {
     Header,
     Intro,
-    Resume,
+    About,
     Projects,
     ButtonTop,
     Footer
