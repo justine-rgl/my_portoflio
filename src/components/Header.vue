@@ -32,6 +32,7 @@ ul {
     margin: auto;
 }
 
+
 .header .logo {
     width: 100px;
     display: block;
@@ -41,6 +42,19 @@ ul {
     display: flex;
     gap: 50px;
 }
+
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding: 15px 30px;
+    }
+    .header-menu {
+        gap: 15px;
+        font-size: 0.8rem;
+    }
+}
+
+
 
 .header-links {
     color: #1E1E1E;

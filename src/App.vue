@@ -11,9 +11,6 @@
 #app {
   font-family: Sora, sans-serif;
   background-color: #ffff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 body {

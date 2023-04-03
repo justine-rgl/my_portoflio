@@ -1,5 +1,5 @@
 <template id="introduction">
-    <section class="container">
+    <section class="introduction">
         <div class="intro">
             <div class="text">
                 <h2>Hello ! Je suis Justine, développeuse en formation à Ada Tech School, Nantes. </h2>
@@ -26,31 +26,18 @@
 
 <style scoped>
 
-section{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
 
-.container {
-    padding:10px 0px 20px 0px;
-    align-content: space-between;
-    flex-wrap: wrap;
+.introduction {
+    display: flex;
     gap: 50px;
-    margin: auto;
-    /* width: 1264px;
-    padding: 0 45px;
-    align-content: stretch; */
+    justify-content: center;
+    margin-bottom: 80px;
 }
-
 .intro {
-    /* flex: 1; */
+    width: 50%;
     display: flex;
     background-color: #fff;
 	flex-direction: column;
-	width:35em;
-	height:40em;
     padding: 50px;
 	border-radius:12px;
     border-style: solid;
@@ -164,10 +151,7 @@ a {
 }
 
 .picture {
-    /* flex: 1; */
-	flex-direction: column;
-	width:35em;
-	height:40em;
+    width: 50%;
 	border-radius:12px;
     border-style: solid;
     border-width: 1px;
@@ -182,11 +166,26 @@ a {
     border-radius: 12px;
 }
 
+@media screen and (max-width: 1100px) {
+    .introduction {
+        flex-direction: column;
+    }
+    .picture, .intro {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 800px) {
+
+    .contact {
+        font-size: 13px;
+    }
     .intro {
         flex-direction: column;
         height: auto;
-        max-width: 80%;
+        padding: 30px;  
     }
 
     h2 {
@@ -195,7 +194,6 @@ a {
 
     .picture {
         height: auto;
-        max-width: 80%;
     }
 }
 </style>

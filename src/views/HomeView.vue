@@ -1,9 +1,11 @@
 <template>
   <div class="home">
     <Header id="header"/>
-    <Intro id="introduction"/>
-    <About id="about"/>
-    <Projects id="projects"/>
+    <div class="container">
+      <Intro id="introduction"/>
+      <About id="about"/>
+      <Projects id="projects"/>
+    </div>
     <ButtonTop/>
     <Footer/>
   </div>
@@ -37,6 +39,18 @@ export default {
   /* max-width: 1264px; */
   margin: 0 auto;
   padding: 0;
+}
+
+.container {
+  padding: 0 50px;
+  max-width: 1264px;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 30px;
+  }
 }
 
 </style>

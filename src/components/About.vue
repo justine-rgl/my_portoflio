@@ -1,5 +1,5 @@
 <template id="about">
-  <section class="container">
+  <section class="about">
     <div class="title">
       <h2>Histoire d'une reconversion 👩‍💻</h2>
       <h3>from marketing to programming</h3>
@@ -66,21 +66,10 @@
 </script>
 
 <style scoped>
-#about {
-  padding-top: 60px;
-}
 
-section {
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  padding:20px 0px;
-  align-content: space-between;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 50%;
+.about {
+  max-width: 800px;
+  margin: 0 auto 80px;
 }
 .title {
   margin-bottom: 30px;
@@ -150,17 +139,8 @@ p {
   max-height: 50px;
 }
 
-@media screen and (max-width: 1500px) {
-.container {
-  width: 60%;
-}
-}
-
 @media screen and (max-width: 800px) {
 
-  .container {
-    width: 70%;
-  }
   .icons-technos {
     max-height: 25px;
   }
