@@ -76,11 +76,11 @@ section {
 }
 
 .container {
-  padding:10px 0px 20px 0px;
+  padding:20px 0px;
   align-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  width: 60%;
+  width: 50%;
 }
 .title {
   margin-bottom: 30px;
@@ -150,7 +150,17 @@ p {
   max-height: 50px;
 }
 
+@media screen and (max-width: 1500px) {
+.container {
+  width: 60%;
+}
+}
+
 @media screen and (max-width: 800px) {
+
+  .container {
+    width: 70%;
+  }
   .icons-technos {
     max-height: 25px;
   }

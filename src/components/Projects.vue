@@ -1,7 +1,7 @@
 <template id="projects">
     <section class="container">
         <div class="title">
-            <h1>Projects</h1>
+            <h1>Projets</h1>
         </div>  
         <div class="projets">
             <div class="projet">
@@ -135,9 +135,10 @@ section{
 }
 
 .container {
+    padding:20px 0px;
     justify-items: center;
     margin: auto;
-    width: 80%;
+    width: 60%;
 }
 
 .projet {
@@ -152,11 +153,7 @@ section{
     gap: 2em;
 }
 
-@media screen and (max-width: 800px) {
-    .projet {
-        flex-direction: column;
-    }
-}
+
 
 .image-projet {
     background-color: #fff;
@@ -173,7 +170,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 30rem;
+    max-width: 60%;
 }
 
 h1 {
@@ -274,6 +271,25 @@ a:hover, button:hover {
   color: #1e1e1e;
   /* transform: scale(1.05); */
   will-change: transform;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .container {
+        width: 80%;
+    }
+    .projet {
+        flex-direction: column;
+    }
+
+    .description-projet {
+        max-width: 100%;
+    }
+
+    a, button {
+        font-family:Sora, sans-serif;
+        font-size: 13px;
+    }
 }
 
 </style>
