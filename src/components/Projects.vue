@@ -280,6 +280,14 @@ a:hover, button:hover {
         font-family:Sora, sans-serif;
         font-size: 13px;
     }
+
+    h1 {
+    font-size: 25px;
+    }
+
+    .boutons-projet {
+        gap: 15px;
+    }
 }
 
 </style>
