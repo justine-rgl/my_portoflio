@@ -281,10 +281,6 @@ a:hover, button:hover {
         font-size: 13px;
     }
 
-    h1 {
-    font-size: 25px;
-    }
-
     .boutons-projet {
         gap: 15px;
     }

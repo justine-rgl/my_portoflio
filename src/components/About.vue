@@ -156,14 +156,6 @@ p {
   .resume {
     width: 100%;
   }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  h3 {
-    font-size: 17px;
-  }
 }
 
 </style>
