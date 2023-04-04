@@ -108,7 +108,7 @@ export default defineComponent({
 <style scoped>
 
 .projects {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 30px;
 }
 .projet {

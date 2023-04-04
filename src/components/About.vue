@@ -70,7 +70,7 @@
 .about {
   max-width: 800px;
   margin: 0 auto ;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 .title {
