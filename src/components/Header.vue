@@ -1,10 +1,10 @@
-<template id="header">
+<template>
     <nav class="header">
         <a href=""><img src="@/assets/logo-jr.png" alt="Logo" class="logo" /></a>
         <ul class="header-menu">
             <a href="" class="header-links">Home</a>
-            <a href="#about" class="header-links">About</a>
-            <a href="#projects" class="header-links">Projects</a>
+            <a href="#about" class="header-links">À propos</a>
+            <a href="#projects" class="header-links">Projets</a>
         </ul>
     </nav>
 </template>
@@ -23,9 +23,6 @@ ul {
     align-items: center;
     background-color: #fff;
     font-size: 1rem;   
-    /* position: sticky;
-    top: 0;
-    z-index: 1; */
     padding: 15px 50px;
     max-width: 1264px;
     justify-items: center;

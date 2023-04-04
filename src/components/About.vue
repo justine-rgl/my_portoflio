@@ -1,4 +1,4 @@
-<template id="about">
+<template>
   <section class="about">
     <div class="title">
       <h2>Histoire d'une reconversion 👩‍💻</h2>
@@ -69,7 +69,9 @@
 
 .about {
   max-width: 800px;
-  margin: 0 auto 80px;
+  margin: 0 auto ;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 .title {
   margin-bottom: 30px;
@@ -141,6 +143,10 @@ p {
 
 @media screen and (max-width: 800px) {
 
+  .about {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
   .icons-technos {
     max-height: 25px;
   }

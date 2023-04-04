@@ -1,4 +1,4 @@
-<template id="footer">
+<template>
         <nav class="footer">
             <ul class="buttons">
                 <a href="mailto:justine.rougeulle@gmail.com" class="contact">Contactez-moi !</a>

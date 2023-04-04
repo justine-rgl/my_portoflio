@@ -1,4 +1,4 @@
-<template id="introduction">
+<template>
     <section class="introduction">
         <div class="intro">
             <div class="text">
@@ -31,7 +31,7 @@
     display: flex;
     gap: 50px;
     justify-content: center;
-    margin-bottom: 80px;
+    padding-bottom: 30px;
 }
 .intro {
     width: 50%;
@@ -169,6 +169,7 @@ a {
 @media screen and (max-width: 1100px) {
     .introduction {
         flex-direction: column;
+        gap: 30px;
     }
     .picture, .intro {
         width: 100%;
