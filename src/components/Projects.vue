@@ -239,7 +239,6 @@ a:hover::after, button:hover::after {
 a:hover, button:hover {
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
-  /* transform: scale(1.05); */
   will-change: transform;
 }
 
