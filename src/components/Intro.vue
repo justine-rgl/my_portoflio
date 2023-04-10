@@ -1,6 +1,6 @@
 <template>
     <section class="introduction">
-        <div class="intro">
+        <div class="box intro">
             <div class="text">
                 <h2>Hello ! Je suis Justine, développeuse en formation à Ada Tech School, Nantes. </h2>
                 <br>
@@ -11,20 +11,20 @@
                 </p>
             </div>
             <div class="buttons">
-                <a href="mailto:justine.rougeulle@gmail.com" class="contact">Contactez-moi</a>
+                <a href="mailto:justine.rougeulle@gmail.com" class="button">Contactez-moi</a>
                 <a href="https://github.com/justine-rgl" target="_blank" class="icons"><img src="@/assets/github_black.png" alt="GitHub" class="icon"></a>
                 <a href="https://www.linkedin.com/in/justinerougeulle/" target="_blank" class="icons"><img src="@/assets/linkedin_black.png" alt="Linkedin" class="icon"></a>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab" target="_blank" class="icons"><img src="@/assets/heart_black.png" alt="Coeur" class="icon"></a>
             </div>
         </div>
-        <div class="picture">
+        <div class="box picture">
             <img src="@/assets/picture_portfolio.jpg" alt="Balade à vélo en bord de Loire" class="photo">
         </div>
     </section>
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
 
 
 .introduction {
@@ -35,15 +35,9 @@
 }
 .intro {
     width: 50%;
-    display: flex;
-    background-color: #fff;
+    display: flex; 
 	flex-direction: column;
     padding: 50px;
-	border-radius:12px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1E1E1E;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
     justify-content: space-between;
 }
 
@@ -53,7 +47,7 @@
 }
 
 h2 {
-    color: #1E1E1E;
+    color: var(--colors-black);
 	font-family:Sora, sans-serif;
 	text-align:left;
 	font-size:30px;
@@ -62,10 +56,10 @@ h2 {
 }
 
 p {
-    color: #1E1E1E;
-	font-family:Sora, sans-serif;
-	text-align:left;
-	font-size:15px;
+    color: var(--colors-black);
+	font-family: Sora, sans-serif;
+	text-align: left;
+	font-size: 15px;
     margin: 0;
 }
 
@@ -76,26 +70,7 @@ p {
     cursor: pointer;
     max-width: 300px;
 }
-
-.contact {
-    background-color: #1E1E1E;
-    border-radius: 40px;
-    font-family:Sora, sans-serif;
-    color: #fff;
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1E1E1E;
-    width: auto;
-    cursor: pointer;
-    overflow: hidden;
-    transition: 0.2s transform ease-in-out;
-    will-change: transform;
-    z-index: 0;
-}
-
-
-a {
+.icons {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -103,39 +78,16 @@ a {
     border-style: none;
     background-color: #fff;
     border-style: solid;
-    border-color: #1E1E1E;
+    border-color: var(--colors-black);
     border-width: 1px;
     width: 40px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.contact::after {
-  background-color: #fff;
-  border-radius: 40px;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-}
-
-.contact:hover::after {
-  transform: translate(0, 0);
-}
-
-.contact:hover {
-  border: 1px solid #1e1e1e;
-  color: #1e1e1e;
-  /* transform: scale(1.05); */
-  will-change: transform;
+.icons:hover {
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 
 .icon {
@@ -143,20 +95,8 @@ a {
     width: 22px;
 }
 
-.icons:hover {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    /* transition: filter 1s;
-    transition: -webkit-filter 1s; */
-}
-
 .picture {
     width: 50%;
-	border-radius:12px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1E1E1E;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
 }
 
 .photo {

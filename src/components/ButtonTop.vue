@@ -7,7 +7,7 @@
 <script>
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .button-top {
     display: flex;
@@ -15,11 +15,23 @@
     bottom: 50px;
     right: 50px;
     z-index: 1;
+
+    &:hover {
+        .arrow-top {
+            animation: 1s ease 1 arrow;
+        }
+    }
 }
+
+@keyframes arrow {
+    50% { transform:translateY(-200%); }
+    51% { transform:translateY(100%); }
+    100% { transform:translateY(0%); }
+ }
 
 a {
     display: flex;
-    background-color: #1E1E1E;
+    background-color: var(--colors-black);
     border-radius: 40px;
     padding: 10px;
     border-style: none;

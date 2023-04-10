@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 .home {
   margin: 0 auto;
@@ -42,7 +42,7 @@ export default {
 
 .container {
   padding: 0 50px;
-  max-width: 1264px;
+  max-width: var(--container-width);
   margin: auto;
 }
 

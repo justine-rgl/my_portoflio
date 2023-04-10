@@ -4,7 +4,7 @@
             <h1>Projets</h1>
         </div>  
         <div class="projets">
-            <div class="projet">
+            <div class="box projet">
                 <img src="@/assets/project_kalaxy.jpg" alt="Plateforme de vente de meubles Kalaxy" class="image-projet">
                 <div class="description-projet">
                     <h2>Plateforme e-commerce</h2>
@@ -15,7 +15,7 @@
                     administrateur avec accès à la base pour gestion des stocks/modification des produits.
                     </p>
                     <div class="boutons-projet">
-                        <button @click="showModal">Le projet en images</button>
+                        <button class="button" @click="showModal">Le projet en images</button>
                         <Modal v-model="isShow" :close="closeModal">
                             <div class="modal">
                                 <img src="@/assets/screenshots_kalaxy.jpg" alt="Screenshots projets Kalaxy" class="image-modal">
@@ -23,11 +23,11 @@
                             </div>
                         </Modal>
 
-                        <a href="https://github.com/justine-rgl/projet_ada_plateforme_ecommerce_front" target="_blank">Voir le projet sur GitHub</a>
+                        <a class="button" href="https://github.com/justine-rgl/projet_ada_plateforme_ecommerce_front" target="_blank">Voir le projet sur GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="projet">
+            <div class="box projet">
                 <img src="@/assets/project_extension.png" alt="Extension navigateur" class="image-projet">
                 <div class="description-projet">
                     <h2>Extension navigateur</h2>
@@ -38,11 +38,11 @@
                         l’écosystème navigateur, conception du menu contextuel (maquette + intégration), gestion des boutons.
                     </p>
                     <div class="boutons-projet">
-                        <a href="https://github.com/justine-rgl/projet_ada_extension_chrome" target="_blank">Voir le projet sur GitHub</a>
+                        <a class="button" href="https://github.com/justine-rgl/projet_ada_extension_chrome" target="_blank">Voir le projet sur GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="projet">
+            <div class="box projet">
                 <img src="@/assets/project_dataviz.png" alt="Datavisualisation & API" class="image-projet">
                 <div class="description-projet">
                     <h2>Datavisualisation & API</h2>
@@ -53,12 +53,12 @@
                         paramétrage de la map, intégration des données, gestion de la responsivité.
                     </p>
                     <div class="boutons-projet">
-                        <a href="https://les-velos-a-nantes.vercel.app/" target="_blank">Découvrir le site</a>
-                        <a href="https://github.com/justine-rgl/projet_ada_dataviz_api" target="_blank">Voir le projet sur GitHub</a>
+                        <a class="button" href="https://les-velos-a-nantes.vercel.app/" target="_blank">Découvrir le site</a>
+                        <a class="button" href="https://github.com/justine-rgl/projet_ada_dataviz_api" target="_blank">Voir le projet sur GitHub</a>
                     </div>
                 </div>
             </div>
-            <div class="projet">
+            <div class="box projet">
                 <img src="@/assets/project_pico.png" alt="Jeu Pico-8" class="image-projet">
                 <div class="description-projet">
                     <h2>Jeu vidéo 2D</h2>
@@ -69,8 +69,8 @@
                         design de la map, du player, des éléments, gameplay (déplacements, collisions, score, etc.).
                     </p>
                     <div class="boutons-projet">
-                        <a href="https://www.lexaloffle.com/bbs/?pid=120434#p" target="_blank">Jouer à Hotdog Master</a>
-                        <a href="https://github.com/justine-rgl/projet_ada_jeu_pico8" target="_blank">Voir le projet sur GitHub</a>
+                        <a class="button" href="https://www.lexaloffle.com/bbs/?pid=120434#p" target="_blank">Jouer à Hotdog Master</a>
+                        <a class="button" href="https://github.com/justine-rgl/projet_ada_jeu_pico8" target="_blank">Voir le projet sur GitHub</a>
                     </div>
                 </div>
             </div>
@@ -105,25 +105,18 @@ export default defineComponent({
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 
 .projects {
     padding-top: 50px;
     padding-bottom: 30px;
 }
+
 .projet {
     display: flex;
     padding: 2em;
-    border-radius:12px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1E1E1E;
-    margin: 0 0 50px 0;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
     gap: 2em;
 }
-
-
 
 .image-projet {
     background-color: #fff;
@@ -133,7 +126,7 @@ export default defineComponent({
 	border-radius:12px;
     border-style: solid;
     border-width: 1px;
-    border-color: #1E1E1E;
+    border-color: var(--colors-black);
 }
 
 .description-projet {
@@ -150,7 +143,7 @@ h1 {
 }
 
 h2 {
-  color: #1e1e1e;
+  color: var(--colors-black);
   margin: 0;
   font-weight: normal;
   font-size: 25px;
@@ -159,7 +152,7 @@ h2 {
 
 h3 {
   margin: 0;
-  color: #c4c4c4;
+  color: var(--colors-grey);
   font-weight: normal;
   font-size: 20px;
 }
@@ -175,27 +168,6 @@ p {
     gap: 20px;
     cursor: pointer;
     flex-wrap: wrap;
-}
-
-a, button {
-    display: flex;
-    background-color: #1E1E1E;
-    border-radius: 40px;
-    font-family:Sora, sans-serif;
-    font-size: 15px;
-    color: #fff;
-    padding: 10px;
-    border-style: solid;
-    border-color: #1E1E1E;
-    border-width: 1px;
-    text-decoration: none;
-    width: auto;
-    cursor: pointer;
-    text-align: left;
-    overflow: hidden;
-    transition: 0.2s transform ease-in-out;
-    will-change: transform;
-    z-index: 0;
 }
 
 .modal {
@@ -215,33 +187,6 @@ a, button {
     width: 100%;
 }
 
-a::after, button::after {
-  background-color: #fff;
-  border-radius: 40px;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-}
-
-a:hover::after, button:hover::after {
-  transform: translate(0, 0);
-}
-
-a:hover, button:hover {
-  border: 1px solid #1e1e1e;
-  color: #1e1e1e;
-  will-change: transform;
-}
-
 @media screen and (max-width: 800px) {
     
     .projects {
@@ -255,11 +200,6 @@ a:hover, button:hover {
 
     .description-projet {
         max-width: 100%;
-    }
-
-    a, button {
-        font-family:Sora, sans-serif;
-        font-size: 13px;
     }
 
     .boutons-projet {

@@ -13,19 +13,18 @@
 <script>
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E1E1E;
+    background-color: var(--colors-black);
     padding: 15px 50px;
     height: 100px;
     position:relative;
     z-index: 2;
     margin: auto;
-    /* max-width: 1264px; */
 }
 
 .footer .logo {

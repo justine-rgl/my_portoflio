@@ -26,16 +26,16 @@
       </div>
       <div class="resume">
         <h4>Expérience</h4>
-        <p style="color:#11b2cc"><strong>Customer Marketing Manager</strong> (2020-2022)</p>
+        <p class="jobtitle"><strong>Customer Marketing Manager</strong> (2020-2022)</p>
         <p><a href="https://www.wearephenix.com/" target="_blank"><strong>Phenix</strong></a> | Stratégie de contenus B2B, outils de vente pour les équipes,
         conception de supports de communication pour nos clients.</p>
         <br />
-        <p style="color:#11b2cc"><strong>Projects Manager</strong> (2016-2019)</p>
+        <p class="jobtitle"><strong>Projects Manager</strong> (2016-2019)</p>
         <p><a href="https://publicisactiv.fr/" target="_blank"><strong>Publicis Activ</strong></a> | Études, recherches et analyses,
         relations fournisseurs et clients, suivi de projets, aide à la réflexion stratégique.</p>
         <br /><br />
         <h4>Formation</h4>
-        <p style="color:#11b2cc"><strong>Communication | Marketing & Publicité |
+        <p class="jobtitle"><strong>Communication | Marketing & Publicité |
         Stratégies de Marque & Branding</strong> (2011-2016)</p>
         <p><strong>BTS, M1, M2 | ISCOM, CELSA Paris-Sorbonne</strong><br />
         Sciences de l’information et de la communication, stratégies marketing et
@@ -43,7 +43,7 @@
         d’analyse et d’aide à la décision.</p>
       </div>
     </div>
-    <div class="technos">
+    <div class="box technos">
       <img src="@/assets/js.png" alt="Javascript" title="Javascript" class="icons-technos" />
       <img src="@/assets/html.png" alt="HTML" title="HTML" class="icons-technos" />
       <img src="@/assets/css.png" alt="CSS" title="CSS" class="icons-technos" />
@@ -65,7 +65,7 @@
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .about {
   max-width: 800px;
@@ -76,6 +76,10 @@
 .title {
   margin-bottom: 30px;
 }
+
+.jobtitle {
+  color: var(--colors-blue);
+}
 .text {
   display: flex;
   justify-content: center;
@@ -84,7 +88,7 @@
 }
 
 h2 {
-  color: #1e1e1e;
+  color: var(--colors-black);
   margin: 0;
   font-weight: normal;
   font-size: 30px;
@@ -99,14 +103,14 @@ h3 {
 }
 
 h4 {
-  color: #1e1e1e;
+  color: var(--colors-black);
   margin: 0;
   font-weight: normal;
   font-size: 25px;
 }
 
 a {
-  color: #1e1e1e;
+  color: var(--colors-black);
   cursor: pointer;
 }
 
@@ -125,14 +129,8 @@ p {
 
 .technos {
   display: flex;
-  background-color: #fff;
   width: 100%;
   padding: 20px 0px;
-  border-radius: 12px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #1e1e1e;
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
   justify-content: space-evenly;
   align-items: center;
 }

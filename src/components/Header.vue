@@ -10,7 +10,7 @@
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
 
 ul {
   list-style: none;
@@ -24,9 +24,13 @@ ul {
     background-color: #fff;
     font-size: 1rem;   
     padding: 15px 50px;
-    max-width: 1264px;
+    max-width: var(--container-width);
     justify-items: center;
     margin: auto;
+
+    @media screen and (max-width: 800px) {
+        padding: 15px 30px;
+    }
 }
 
 
@@ -38,41 +42,35 @@ ul {
 .header-menu {
     display: flex;
     gap: 50px;
-}
 
-
-@media screen and (max-width: 800px) {
-    .header {
-        padding: 15px 30px;
-    }
-    .header-menu {
+    @media screen and (max-width: 800px) {
         gap: 15px;
         font-size: 0.8rem;
     }
 }
 
 
-
 .header-links {
-    color: #1E1E1E;
+    color: var(--colors-black);;
     text-decoration: none;
     font-weight: normal;
     position: relative;
-}
 
-.header-links::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #11b2cc;
-    transition: all 300ms ease;
-}
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--colors-blue);
+        transition: all 300ms ease;
+    }
 
-.header-links:hover::after {
-    width: 100%;
+    &:hover {
+       &::after {
+         width: 100%;
+        }
+    }
 }
-
 </style>
