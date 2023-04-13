@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="box projet">
-                <img src="@/assets/project_extension.png" alt="Extension navigateur" class="image-projet">
+                <img src="@/assets/project_extension.jpg" alt="Extension navigateur" class="image-projet">
                 <div class="description-projet">
                     <h2>Extension navigateur</h2>
                     <h3>HTML, CSS, Javascript</h3>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="box projet">
-                <img src="@/assets/project_dataviz.png" alt="Datavisualisation & API" class="image-projet">
+                <img src="@/assets/project_dataviz.jpg" alt="Datavisualisation & API" class="image-projet">
                 <div class="description-projet">
                     <h2>Datavisualisation & API</h2>
                     <h3>HTML, CSS, Javascript</h3>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="box projet">
-                <img src="@/assets/project_pico.png" alt="Jeu Pico-8" class="image-projet">
+                <img src="@/assets/project_pico.jpg" alt="Jeu Pico-8" class="image-projet">
                 <div class="description-projet">
                     <h2>Jeu vidéo 2D</h2>
                     <h3>Pico-8, Lua</h3>
